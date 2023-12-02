@@ -1,6 +1,23 @@
 # Programming-Languages
 Programming Languages Installation Scripts
 
+Installation steps on Ubuntu / Debian
+Connect to your server through ssh and copy and run the following command in the terminal
+
+Server Preparation
+```
+sudo apt update -y && sudo apt upgrade -y && reboot
+```
+After Rebooting Server
+```
+sudo apt install -y curl && sudo apt install -y dialog
+```
+
+Languages Scripts Installer
+```
+sudo bash -c "$(curl -Lfo- https://raw.githubusercontent.com/Amir-Net/Programming-Languages/main/start.sh)"
+```
+
 For manual installation, copy and run the following command in the terminal.
 ```
 sudo bash -c "$(curl -Lfo- https://raw.githubusercontent.com/Amir-Net/Programming-Languages/main/go.sh)"
